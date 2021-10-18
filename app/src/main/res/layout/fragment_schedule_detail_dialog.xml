@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.ScheduleDetailDialogFragment"
+    android:background="@drawable/shape_details">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <Toolbar
+            android:id="@+id/tbConferenceDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutScheduleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/highImageScheduleDetail">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.5"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvScheduleDetailConferenceTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Titulo conferencia"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizeScheduleHour"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/smallMargin"
+                    app:cardCornerRadius="@dimen/smallMargin"
+                    app:cardElevation="@dimen/smallMargin" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/shape_card_details">
+
+                        <TextView
+                            android:id="@+id/tvScheduleDetailConferenceHour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/smallMargin"
+                            android:gravity="center"
+                            android:text="00:00"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sizetext" />
+
+                        <TextView
+                            android:id="@+id/tvScheduleDetailSpeakerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/smallMargin"
+                            android:gravity="center"
+                            android:text="Nombre expositor"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sizeSubtitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvScheduleDetailTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/middlePadding"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Tag"
+                            android:background="@drawable/shape_topico"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sizetext" />
+
+                        <TextView
+                            android:id="@+id/tvScheduleDetailDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/smallMargin"
+                            android:gravity="center"
+                            android:text="Detalle de la conferencia"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sizetext" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

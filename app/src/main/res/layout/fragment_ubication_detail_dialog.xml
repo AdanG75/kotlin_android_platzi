@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.UbicationDetailDialogFragment"
+    android:background="@drawable/shape_details" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <Toolbar
+            android:id="@+id/tbUbicationDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutUbicationDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            app:cardCornerRadius="@dimen/smallMargin"
+            app:cardElevation="@dimen/smallMargin">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_card_details">
+
+                    <ImageView
+                        android:id="@+id/ivUbicationDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/highUbicationDetailImage"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_2" />
+
+                    <TextView
+                        android:id="@+id/tvUbicationDetailNamePlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="center"
+                        android:text="Nombre del Lugar"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sizeTitle"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvUbicationDetailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="start|center_vertical"
+                        android:text="Dirección del lugar"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizetext"
+                        android:drawablePadding="@dimen/middlePadding"
+                        app:drawableStartCompat="@drawable/ic_baseline_location_on_24"
+                        android:drawableTint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvUbicationDetailPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="start|center_vertical"
+                        android:text="55412398"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizetext"
+                        android:drawablePadding="@dimen/middlePadding"
+                        app:drawableStartCompat="@drawable/ic_baseline_local_phone_24"
+                        android:drawableTint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvUbicationDetailLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="start|center_vertical"
+                        android:text="www.sitioweb.com"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizetext"
+                        android:drawablePadding="@dimen/middlePadding"
+                        app:drawableStartCompat="@drawable/ic_baseline_link_24"
+                        android:drawableTint="@color/white" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

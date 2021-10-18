@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fourdp">4dp</dimen>
+    <dimen name="altoLogoPlatzi">48dp</dimen>
+    <dimen name="toolbarAlto">32dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="cardElevation">4dp</dimen>
+    <dimen name="smallMargin">4dp</dimen>
+    <dimen name="altoImageViewHome">148dp</dimen>
+    <dimen name="sizeTitle">24sp</dimen>
+    <dimen name="sizeSubtitle">18sp</dimen>
+    <dimen name="sizetext">14sp</dimen>
+    <dimen name="sizeScheduleHour">28sp</dimen>
+    <dimen name="highImageScheduleDetail">200dp</dimen>
+    <dimen name="middleSizeCircularImage">64dp</dimen>
+    <dimen name="bigSizeCircularImage">112dp</dimen>
+    <dimen name="veryBigSizeCircularImage">148dp</dimen>
+    <dimen name="sizeMiddleIcon">42dp</dimen>
+    <dimen name="middlePadding">6dp</dimen>
+    <dimen name="bigPaddingBottom">64dp</dimen>
+    <dimen name="highUbicationDetailImage">360dp</dimen>
+</resources>

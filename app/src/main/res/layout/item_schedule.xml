@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/smallMargin"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvItemScheduleHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="9:00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sizeScheduleHour" />
+
+                <TextView
+                    android:id="@+id/tvItemScheduleAMPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="A.M."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sizeSubtitle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvItemScheduleConferenceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start|bottom"
+                    android:lines="1"
+                    android:paddingStart="@dimen/smallMargin"
+                    android:paddingEnd="@dimen/smallMargin"
+                    android:text="Nombre de la conferencia"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sizeSubtitle" />
+
+                <TextView
+                    android:id="@+id/tvItemScheduleConferenceSpeaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start|bottom"
+                    android:lines="1"
+                    android:paddingStart="@dimen/smallMargin"
+                    android:paddingEnd="@dimen/smallMargin"
+                    android:text="Nombre del expositor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sizetext" />
+
+                <TextView
+                    android:id="@+id/tvItemScheduleTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start|bottom"
+                    android:lines="1"
+                    android:paddingStart="@dimen/middlePadding"
+                    android:paddingEnd="@dimen/middlePadding"
+                    android:text="Tag"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_topico"
+                    android:textSize="@dimen/sizetext" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.SpeakersDetailDialogFragment"
+    android:background="@drawable/shape_details">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <Toolbar
+            android:id="@+id/tbSpeakerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutSpeakerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            app:cardCornerRadius="@dimen/smallMargin"
+            app:cardElevation="@dimen/smallMargin" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_card_details">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivSpeakerImageDetail"
+                        android:layout_width="@dimen/veryBigSizeCircularImage"
+                        android:layout_height="@dimen/veryBigSizeCircularImage"
+                        android:src="@mipmap/ic_launcher_round"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailSpeakerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="center"
+                        android:text="Nombre expositor"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizeTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailJobTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="center"
+                        android:text="Job title"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sizetext" />
+
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="center"
+                        android:text="Trabajo"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizeSubtitle" />
+
+                    <ImageView
+                        android:id="@+id/tvSpeakerDetailTwitter"
+                        android:layout_width="@dimen/sizeMiddleIcon"
+                        android:layout_height="@dimen/sizeMiddleIcon"
+                        android:src="@drawable/ic_icons_twitter"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:gravity="center"
+                        android:text="Descripción del expositor"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sizetext" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
